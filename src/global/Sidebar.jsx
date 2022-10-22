@@ -7,6 +7,7 @@ import { tokens } from "./../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import Logout from "./Logout"
 
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -110,7 +111,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-           
+           <Logout />
           </Box>
         </Menu>
       </ProSidebar>
