@@ -1,34 +1,16 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import Topbar from "./global/Topbar";
-import Sidebar from "./global/Sidebar";
-import Dashboard from "./components/scenes/dashboard";
-import Team from "./components/scenes/team";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { ColorModeContext, useMode } from "./theme";
-
+import React from "react";
+// import Routlinks from "./components/Routlinks"
+import Adminroutlinks from "./components/admin/Adminroutlinks";
 
 function App() {
-  const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true);
-
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <div className="app">
-          <Sidebar isSidebar={isSidebar} />
-          <main className="content">
-            <Topbar setIsSidebar={setIsSidebar} />
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
-             </Routes>
-          </main>
-        </div>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
-  );
+
+    <div>
+      {/* <Routlinks /> */}
+      <Adminroutlinks />
+    </div>
+    
+    );
 }
 
 export default App;
