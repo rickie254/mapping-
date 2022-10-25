@@ -45,10 +45,16 @@ h3{
     bottom: -300px;  
     left: 130px;
     width: 130px;
+    color:#00171F;
+    border: none;
 }
 .delete{
     position: relative;
     bottom: -280px;  
     left: -50px;
     width: 100px;
+    color: red;
+    background: none;
+    border: none;
+    
 }

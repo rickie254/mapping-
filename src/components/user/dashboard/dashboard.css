@@ -40,3 +40,21 @@ h3{
     width: 350px;
     text-align: center;
 }
+.delete{
+    position: relative;
+    bottom: -295px;  
+    left: -50px;
+    width: 90px;
+    color: red;
+     background: none;
+     border: none;
+}
+.delet{
+    position: relative;
+    bottom: -295px;  
+    left: -70px;
+    width: 80px;
+    color: blue;
+    background: none;
+    border: none;
+}
