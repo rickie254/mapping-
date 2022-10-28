@@ -22,7 +22,7 @@ function Routlinks() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
+              <Route path="/team" element={<Team/>} />
              </Routes>
           </main>
         </div>
